@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Araye.Code", "Araye.Code\Araye.Code.csproj", "{1DCDF752-9900-40A2-87B2-08E67377587C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Araye.Code", "Araye.Code.csproj", "{AA260242-450E-4CF4-AECA-DD740BFC02C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1DCDF752-9900-40A2-87B2-08E67377587C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1DCDF752-9900-40A2-87B2-08E67377587C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1DCDF752-9900-40A2-87B2-08E67377587C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1DCDF752-9900-40A2-87B2-08E67377587C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA260242-450E-4CF4-AECA-DD740BFC02C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA260242-450E-4CF4-AECA-DD740BFC02C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA260242-450E-4CF4-AECA-DD740BFC02C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA260242-450E-4CF4-AECA-DD740BFC02C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {67F516BC-0DE5-4F58-BEDA-64C0485FF5F7}
+		SolutionGuid = {B43C9D4D-C24F-4362-81E3-D2860C1DC485}
 	EndGlobalSection
 EndGlobal
