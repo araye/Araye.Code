@@ -4,4 +4,4 @@ This is .NET ~~Standard~~ version of common codes we use in our web projects at 
 
 
 [![NuGet](https://img.shields.io/nuget/v/Araye.Code.svg)](https://www.nuget.org/packages/Araye.Code/)
-[![Build status](https://ci.appveyor.com/api/projects/status/1v1umc6ura071io4?svg=true)](https://ci.appveyor.com/project/Hameds/araye-code)
+[![AppVeyor](https://img.shields.io/appveyor/ci/gruntjs/grunt.svg)](https://ci.appveyor.com/project/Araye/araye-code)
