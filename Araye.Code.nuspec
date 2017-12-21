@@ -4,13 +4,13 @@
     <id>$id$</id>
     <version>$version$</version>
     <title>$title$</title>
-    <authors>$author$</authors>
-    <owners>$author$</owners>
+    <authors>Araye</authors>
+    <owners>Araye</owners>
     <licenseUrl>https://github.com/araye/Araye.Code/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/araye/Araye.Code</projectUrl>
     <iconUrl>https://avatars3.githubusercontent.com/u/34438019?s=200</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
+    <description>open source set of methods we use in our projects at Araye Software Development</description>
     <releaseNotes></releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags></tags>
