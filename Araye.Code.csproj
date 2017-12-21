@@ -30,17 +30,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\Microsoft.AspNet.Identity.Core.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web" />
-    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\System.Web.Mvc.dll</HintPath>
-    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,11 +44,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cache\ArayeNoCacheFilter.cs" />
     <Compile Include="Consts.cs" />
+    <Compile Include="Content\Utils.cs" />
+    <Compile Include="Extensions\CollectionExtensions.cs" />
+    <Compile Include="Extensions\EnumExtensions.cs" />
+    <Compile Include="Extensions\GeneralExtensions.cs" />
+    <Compile Include="Extensions\HtmlExtensions.cs" />
+    <Compile Include="Extensions\ImageExtensions.cs" />
+    <Compile Include="Mvc\Extensions.cs" />
+    <Compile Include="Mvc\ArayeMultipleButtonAttribute.cs" />
+    <Compile Include="Persian\DateTimeActionFilter.cs" />
+    <Compile Include="Persian\DateTimeModelBinder.cs" />
+    <Compile Include="Persian\Extensions.cs" />
+    <Compile Include="Extensions\RtlExtensions.cs" />
+    <Compile Include="Persian\PersianCulture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Content\FeedItem.cs" />
+    <Compile Include="Content\FeedResult.cs" />
+    <Compile Include="Security\ArayeAllowUploadAttribute.cs" />
     <Compile Include="Security\ArayeActionPermissionAttribute.cs" />
     <Compile Include="Security\ArayePermissionAttribute.cs" />
     <Compile Include="Security\ArayeAuthorizationAttribute.cs" />
+    <Compile Include="Security\Extensions.cs" />
+    <Compile Include="Content\Sitemap.cs" />
+    <Compile Include="Thumbnail\ThumbnailHelpers.cs" />
+    <Compile Include="Thumbnail\ThumbnailSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNet.Identity.Core">
@@ -63,5 +79,6 @@
       <Version>5.2.3</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
