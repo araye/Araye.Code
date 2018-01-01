@@ -70,6 +70,7 @@
     <Compile Include="Content\Sitemap.cs" />
     <Compile Include="Thumbnail\ThumbnailHelpers.cs" />
     <Compile Include="Thumbnail\ThumbnailSettings.cs" />
+    <Compile Include="Extensions\AssemblyExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNet.Identity.Core">
