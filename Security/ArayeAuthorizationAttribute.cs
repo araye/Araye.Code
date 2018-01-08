@@ -20,7 +20,7 @@ namespace Araye.Code.Security
             var permission = false;
             foreach (var att in atts)
             {
-                permission = HasPermission(att.ActionId);
+                permission = HasPermission(att.ActionId.ToLower().Trim());
                 if (permission)
                     break;
             }
