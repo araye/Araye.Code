@@ -27,6 +27,12 @@ namespace Araye.Code.Content
             var slug = title.Substring(0, end);
             return slug = slug.Replace(" ", "-").Replace(":", "-").Replace(".", "-");
         }
+
+        public static string GetSlug(string title)
+        {
+            return GetSlug(title, title.Length);
+        }
+
         public static string UnSlug(string tilte)
         {
             return tilte.Replace("-", " ");
