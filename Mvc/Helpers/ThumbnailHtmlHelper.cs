@@ -8,9 +8,9 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace Araye.Code.Thumbnail
+namespace Araye.Code.Mvc.Helpers
 {
-	public static class ThumbnailHelpers
+	public static class ThumbnailHtmlHelper
 	{
 		#region Global Variables
 

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Configuration;
 
-namespace Araye.Code.Thumbnail
+namespace Araye.Code.Mvc.Helpers
 {
 	public class ThumbnailSettings : ConfigurationSection
 	{

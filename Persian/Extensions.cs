@@ -143,6 +143,12 @@ namespace Araye.Code.Persian
             return s.Replace("0", "۰").Replace("1", "۱").Replace("2", "۲").Replace("3", "۳").Replace("4", "۴").Replace("5", "۵").Replace("6", "۶").Replace("7", "۷").Replace("8", "۸").Replace("9", "۹");
         }
 
+        public static bool IsItMobileNumber(this string text)
+        {
+            if (text.Length != 11) return false;
+            return text.StartsWith("090") || text.StartsWith("091") || text.StartsWith("092") || text.StartsWith("093");
+        }
+
         #region ValidateNationalCode
         /// <summary>
         /// Validate IR National Code

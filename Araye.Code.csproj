@@ -44,7 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cache\ArayeNoCacheFilter.cs" />
+    <Compile Include="Mvc\ArayeNoCacheFilter.cs" />
     <Compile Include="Consts.cs" />
     <Compile Include="Content\Utils.cs" />
     <Compile Include="Extensions\CollectionExtensions.cs" />
@@ -52,8 +52,13 @@
     <Compile Include="Extensions\GeneralExtensions.cs" />
     <Compile Include="Extensions\HtmlExtensions.cs" />
     <Compile Include="Extensions\ImageExtensions.cs" />
+    <Compile Include="Extensions\IoExtensions.cs" />
+    <Compile Include="Models\BaseEntity.cs" />
+    <Compile Include="Mvc\ArayeRestoreModelStateFromTempDataAttribute.cs" />
+    <Compile Include="Mvc\ArayeSetTempDataModelStateAttribute.cs" />
     <Compile Include="Mvc\Extensions.cs" />
     <Compile Include="Mvc\ArayeMultipleButtonAttribute.cs" />
+    <Compile Include="Mvc\Helpers\GravatarHtmlHelper.cs" />
     <Compile Include="Persian\DateTimeActionFilter.cs" />
     <Compile Include="Persian\DateTimeModelBinder.cs" />
     <Compile Include="Persian\Extensions.cs" />
@@ -68,9 +73,10 @@
     <Compile Include="Security\ArayeAuthorizationAttribute.cs" />
     <Compile Include="Security\Extensions.cs" />
     <Compile Include="Content\Sitemap.cs" />
-    <Compile Include="Thumbnail\ThumbnailHelpers.cs" />
-    <Compile Include="Thumbnail\ThumbnailSettings.cs" />
+    <Compile Include="Mvc\Helpers\ThumbnailHtmlHelper.cs" />
+    <Compile Include="Mvc\Helpers\ThumbnailSettings.cs" />
     <Compile Include="Extensions\AssemblyExtensions.cs" />
+    <Compile Include="Utils\GuidEncoder.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNet.Identity.Core">

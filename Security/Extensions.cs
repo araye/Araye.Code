@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Security.Claims;
 using System.Security.Cryptography;
+using System.Security.Principal;
 using System.Text;
 using System.Web.Mvc;
 using Araye.Code.Mvc;
@@ -39,5 +41,12 @@ namespace Araye.Code.Security
                 return BitConverter.ToString(hash).Replace("-", "").ToUpperInvariant();
             }
         }
+
+        public static string GetIdentityProperty(this IIdentity identity,string propertyName)
+        {
+            var claim = ((ClaimsIdentity)identity).FindFirst(propertyName);
+            return (!string.IsNullOrEmpty(claim.Value)) ? claim.Value : string.Empty;
+        }
+
     }
 }
