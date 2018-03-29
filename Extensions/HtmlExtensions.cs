@@ -288,6 +288,7 @@ namespace Araye.Code.Extensions
 
         public static List<Uri> ImagesInHtml(this string htmlSource, HttpContext context, string replaceValue)
         {
+            // ToDo: need to act on replaceValue
             var links = new List<Uri>();
             const string regexImgSrc = @"<img[^>]*?src\s*=\s*[""']?([^'"" >]+?)[ '""][^>]*?>";
             var matchesImgSrc = Regex.Matches(htmlSource, regexImgSrc, RegexOptions.IgnoreCase | RegexOptions.Singleline);
@@ -296,7 +297,7 @@ namespace Araye.Code.Extensions
                 try
                 {
                     var href = m.Groups[1].Value;
-                    if (href.StartsWith(replaceValue))
+                    if (href.StartsWith("/") || (!string.IsNullOrEmpty(replaceValue) && href.StartsWith(replaceValue)))
                     {
                         href = String.Format("{0}://{1}{2}", context.Request.Url.Scheme, context.Request.Url.Authority, href);
                     }
