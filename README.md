@@ -6,3 +6,5 @@ This is .NET version of common codes we use in our web projects at [Araye](http:
 
 [![NuGet](https://img.shields.io/nuget/v/Araye.Code.svg)](https://www.nuget.org/packages/Araye.Code/)
 [![AppVeyor](https://img.shields.io/appveyor/ci/gruntjs/grunt.svg)](https://ci.appveyor.com/project/Araye/araye-code)
+
+[![Build history](https://buildstats.info/appveyor/chart/Araye/araye-code)](https://ci.appveyor.com/project/Araye/araye-code/history)
