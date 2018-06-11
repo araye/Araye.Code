@@ -48,5 +48,17 @@ namespace Araye.Code.Security
             return (!string.IsNullOrEmpty(claim.Value)) ? claim.Value : string.Empty;
         }
 
+        /// <summary>
+        /// returns user's name and family from custom claims named 'Name' & 'Family'
+        /// </summary>
+        /// <param name="identity"></param>
+        /// <returns></returns>
+        public static string GetNameFamily(this IIdentity identity)
+        {
+            var nameClaim = ((ClaimsIdentity)identity).FindFirst("Name");
+            var familyClaim = ((ClaimsIdentity)identity).FindFirst("Family");
+            return (!string.IsNullOrEmpty(nameClaim.Value) && !string.IsNullOrEmpty(nameClaim.Value)) ? $"{nameClaim.Value} {familyClaim.Value}" : identity.Name;
+        }
+
     }
 }
