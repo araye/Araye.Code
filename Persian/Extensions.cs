@@ -149,6 +149,17 @@ namespace Araye.Code.Persian
             return text.StartsWith("090") || text.StartsWith("091") || text.StartsWith("092") || text.StartsWith("093");
         }
 
+        /// <summary>
+        /// return Persian Date based on PersianCalendar class
+        /// </summary>
+        /// <param name="gregorianDate"></param>
+        /// <returns></returns>
+        public static string GetPersianDate(this DateTime gregorianDate)
+        {
+            PersianCalendar pc = new PersianCalendar();
+            return $"{pc.GetYear(gregorianDate)}/{pc.GetMonth(gregorianDate)}/{pc.GetDayOfMonth(gregorianDate)}";
+        }
+
         #region ValidateNationalCode
         /// <summary>
         /// Validate IR National Code
