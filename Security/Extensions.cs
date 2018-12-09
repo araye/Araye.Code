@@ -6,6 +6,7 @@ using System.Security.Principal;
 using System.Text;
 using System.Web.Mvc;
 using System.Web.Routing;
+using Araye.Code.Extensions;
 using Araye.Code.Mvc;
 
 namespace Araye.Code.Security
@@ -117,7 +118,7 @@ namespace Araye.Code.Security
         {
             var nameClaim = ((ClaimsIdentity)identity).FindFirst("Name");
             var familyClaim = ((ClaimsIdentity)identity).FindFirst("Family");
-            return (!string.IsNullOrEmpty(nameClaim.Value) && !string.IsNullOrEmpty(nameClaim.Value)) ? $"{nameClaim.Value} {familyClaim.Value}" : identity.Name;
+            return (!string.IsNullOrEmpty(nameClaim?.Value.ToStringSafe()) && !string.IsNullOrEmpty(nameClaim?.Value.ToStringSafe())) ? $"{nameClaim.Value} {familyClaim.Value}" : identity.Name;
         }
 
     }
